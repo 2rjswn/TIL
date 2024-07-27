@@ -8,3 +8,5 @@
 - git push origin 브런치명 : 커밋
 - git status
 - git init
+- git pull origin 브랜치명 : 깃 코드 받아오기
+- git fetch 는 확인만 한다
