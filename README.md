@@ -10,3 +10,7 @@
 - git init
 - git pull origin 브랜치명 : 깃 코드 받아오기
 - git fetch 는 확인만 한다
+- git log : 커밋 히스토리
+- git merge
+  - git branch --merged 
+  - git branch --no-merged 
