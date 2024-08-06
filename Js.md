@@ -155,3 +155,48 @@ async function test() {
   console.log(result);
 }
 ```
+
+### 패턴
+
+```jsx
+var pattern = /a/;
+var pattern = new RegExp('a');
+```
+
+### RegExp.exec()
+
+```jsx
+console.log(pattern.exec('abcdef'));
+실행결과 문자열 a를 값으로 하는 배열을 리턴함
+console.log(pattern.exec('bcdefg'));
+a가 없어 null 반환
+
+var pattern = /a./;
+console.log(pattern.exec('abcdef'));
+실행결과 ab값으로 하는 배열을 리턴함 .은 하나의 문자를 의미 
+var pattern = /a/i; 대소문자 구별 x
+var pattern = /a/g; 패턴에 해당하는 문자 전부
+var pattern = /a/ig; 도 가
+```
+
+### RegExp.test()
+
+```jsx
+console.log(pattern.test('abcdef'));
+a가 있어서 true
+console.log(pattern.test('bcdefg'));
+a가 없어서 false
+```
+
+### String.match()
+
+```jsx
+console.log('abcd'.match(pattern)); 배열 a 반환
+console.log('bcd'.match(pattern)); null
+```
+
+### String.replace()
+
+```jsx
+console.log('abcd'.replace(pattern, 'A')) Abcd
+```
