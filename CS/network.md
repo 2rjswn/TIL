@@ -19,6 +19,7 @@ TCP는 중요한 문서, 파일 전송과 같이 신뢰성이 중요한 서비�
 1. Client가 Server에게 접속을 요청하는 SYN플래그를 보낸다.
 2. Server는 Listen상태에서 SYN이 들어온 것을 확인하고 SYN_RECV상태로 바뀌어 SYN + ACK플래그를 Client에게 전송한다.        
 그 후 Server는 다시 ACK 플래그를 받기 위해 대기상태로 변경된다.
-3. SYN + ACK 상태를 확인한 Client는 서버에게 ACK를 보내고 연결 성립이 된다.         
+3. SYN + ACK 상태를 확인한 Client는 서버에게 ACK를 보내고 연결 성립이 된다.
+![스크린샷 2024-08-10 220856](https://github.com/user-attachments/assets/014b0522-14a1-4c64-aa3f-62de69b0814d)
 SYN : 연결설정, ACK : 응답확인, FIN : 연결해제        
 
