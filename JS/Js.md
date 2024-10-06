@@ -140,7 +140,7 @@ paymentWidget.requestPayment({
 
 then() 체인을 길게 이어나가면 콜백과 마찬가지로 코드의 가독성이 떨어진다
 
-### **aync/await**
+### **async/await**
 
 콜백, Promise 체인의 단점은 `async`와 `await`로 보완할 수 있다
 async를 함수 앞에 붙이면 이 함수는 비동기적이고 **Promise를 반환한다는 것이다**
